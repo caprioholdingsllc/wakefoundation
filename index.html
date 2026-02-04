@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Repair Triangle | When You Notice Foundation Problems</title>
+    <meta name="description" content="Foundation repair in Wake County. Solutions for cracks, settling, and structural issues across the Triangle.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #7c2d12 0%, #78350f 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .hero {
+            background: #78350f;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .problem-section {
+            margin-bottom: 3rem;
+        }
+        .problem-section h2 {
+            color: #7c2d12;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .problem-card {
+            background: #fef3c7;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #78350f;
+        }
+        .problem-card h3 {
+            color: #7c2d12;
+            margin-bottom: 1rem;
+        }
+        .problem-card .pain {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .problem-card .fix {
+            color: #78350f;
+            font-weight: 600;
+            padding-top: 1rem;
+            border-top: 1px solid #fde047;
+        }
+        .cta-inline {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .cta-inline p {
+            color: #991b1b;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        .cta-inline a {
+            color: #7c2d12;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+        .solution-section {
+            background: #dbeafe;
+            padding: 3rem 2rem;
+            margin: 3rem -2rem;
+            border-top: 3px solid #3b82f6;
+        }
+        .solution-section h2 {
+            color: #1e40af;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .solution-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #7c2d12;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #78350f;
+        }
+        .service-card h3 {
+            color: #7c2d12;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #7c2d12;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #78350f;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #7c2d12 0%, #78350f 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Foundation Repair Triangle</div>
+            <div class="phone">📞 (919) 635-9141</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>When You Notice Foundation Problems</h1>
+        <p>Foundation issues cause stress and worry. We fix settling, cracks, and structural problems across Wake County.</p>
+    </section>
+
+    <div class="container">
+        <section class="problem-section">
+            <h2>Signs of Foundation Problems</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>🏚️ Cracks in Walls</h3>
+                    <div class="pain">You see cracks appearing in interior walls, especially above doorways or in corners. Drywall cracks keep coming back after you patch them. You're worried about what's causing it.</div>
+                    <div class="fix">→ We assess whether cracks indicate foundation movement and provide solutions to stabilize and repair.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🚪 Doors & Windows Sticking</h3>
+                    <div class="pain">Doors suddenly won't close properly. Windows stick when opening. Gaps appear around door frames. Your house is shifting and you don't know why.</div>
+                    <div class="fix">→ Foundation leveling and stabilization fixes the underlying settling that causes doors and windows to bind.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h3>📐 Uneven Floors</h3>
+                    <div class="pain">Floors slope noticeably. You can feel yourself walking downhill. Furniture won't sit level. Worried the floor might collapse.</div>
+                    <div class="fix">→ Foundation piers and supports lift and level sagging floors, preventing further damage.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h3>🧱 Exterior Foundation Cracks</h3>
+                    <div class="pain">Large cracks visible in foundation walls outside. Horizontal cracks appearing. Foundation walls bowing inward. Concerned about structural integrity.</div>
+                    <div class="fix">→ Wall anchors, carbon fiber straps, and foundation repairs stabilize and prevent further movement.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h3>💧 Water in Basement/Crawlspace</h3>
+                    <div class="pain">Water seeping through foundation walls. Standing water in crawlspace. Musty smell from moisture. Foundation cracks letting water in.</div>
+                    <div class="fix">→ We seal cracks, install drainage systems, and waterproof foundations to keep water out permanently.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h3>😰 Home Value Concerns</h3>
+                    <div class="pain">Can't sell your house with foundation problems. Home inspector flagged foundation issues. Buyers walking away. Repair is necessary to close sale.</div>
+                    <div class="fix">→ Professional foundation repair with transferable warranty makes your home sellable and protects value.</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-inline">
+            <p><strong>Foundation problems don't fix themselves.</strong> They get worse and more expensive.</p>
+            <a href="tel:9196359141">Call (919) 635-9141</a>
+        </div>
+
+        <section class="solution-section">
+            <h2>How We Fix Foundation Problems</h2>
+            <p>We start with a thorough inspection to identify what's causing the problem—settling soil, poor drainage, or structural issues. Every foundation problem has a specific solution.</p>
+            <p>Repairs include installing foundation piers to lift and stabilize, carbon fiber reinforcement for cracked walls, drainage systems to manage water, and sealing to prevent moisture intrusion.</p>
+            <p>Most importantly, we provide transferable warranties so future buyers have confidence in the repair. This protects your home value and gives you peace of mind.</p>
+        </section>
+
+        <section class="services-section">
+            <h2>Foundation Repair Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Foundation Leveling</h3>
+                    <p>Lift and level settled foundations using piers and supports.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Crack Repair</h3>
+                    <p>Seal and stabilize foundation cracks permanently.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Crawlspace Repair</h3>
+                    <p>Fix sagging floors and support beam problems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wall Stabilization</h3>
+                    <p>Stop bowing or leaning foundation walls with anchors.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Waterproofing</h3>
+                    <p>Keep water out with drainage and sealing systems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pier Installation</h3>
+                    <p>Helical and steel piers for permanent stabilization.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-inline">
+            <p>Get your foundation assessed by professionals</p>
+            <a href="tel:9196359141">Call (919) 635-9141</a>
+        </div>
+
+        <section class="form-section">
+            <h2>Request Free Inspection</h2>
+            <p class="subtitle">Tell us about your foundation concerns</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="WAKE-FOUND-001">
+                <input type="hidden" name="market" value="Wake County">
+                <input type="hidden" name="industry" value="Foundation Repair">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="foundationrepairtriangle.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Property Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="problem_type">Main Issue *</label>
+                    <select id="problem_type" name="problem_type" required>
+                        <option value="">Select...</option>
+                        <option value="Cracks">Cracks in Walls/Foundation</option>
+                        <option value="Doors/Windows">Doors/Windows Sticking</option>
+                        <option value="Uneven Floors">Uneven or Sagging Floors</option>
+                        <option value="Water Issues">Water in Basement/Crawlspace</option>
+                        <option value="Bowing Walls">Bowing Foundation Walls</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Problem Description *</label>
+                    <textarea id="details" name="details" required placeholder="Describe what you're noticing..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Inspection</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Foundation Repair Triangle. Professional Foundation Repair Services.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
